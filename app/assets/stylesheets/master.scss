@@ -1,9 +1,9 @@
 @import "bootstrap";
 
+
 body {
   background: image_url('honeycomb1.jpg');
-font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
@@ -27,8 +27,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  background: image_url('3-1.jpg');
+  background-color: #e1b300;
   box-shadow: 0px 1px 3px #2a2a2a;
 
 }
 
+.navbar-inverse .navbar-brand {
+  color: #e1b300;
+  font-family: 'kingthings_foundationregular';
+  font-size: 54px;
+  padding: 0px;
+
+}
