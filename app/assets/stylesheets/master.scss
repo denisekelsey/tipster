@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 
 body {
@@ -42,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'kingthings_foundationregular';
   font-size: 54px;
   padding: 0px;
+
+}
+
+.navbar-nav .nav-link {
+  color: #f2ce61;
+  float: right;
 
 }
 
