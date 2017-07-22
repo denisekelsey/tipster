@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #e1b300;
   font-family: 'kingthings_foundationregular';
   font-size: 54px;
-  padding-left: 8rails gerepx;
+  padding-left: 8;
 
 }
 
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.pagination nav {
-  margin: auto;
+.pagination {
+  justify-content: center;
 
 }
