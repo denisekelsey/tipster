@@ -2,6 +2,11 @@
 @import "font-awesome";
 
 
+a {
+  color: black;
+
+}
+
 body {
   background: image_url('honeycomb1.jpg');
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,12 +25,6 @@ body {
   padding-top: 10px;
   padding-left: 20px;
 }
-
-.btn btn-danger {
-
-
-}
-
 
 h1, h2, h3, h4, h5, h6 {
   margin:0;
