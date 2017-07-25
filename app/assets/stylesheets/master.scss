@@ -26,10 +26,6 @@ body {
   padding-left: 20px;
 }
 
-.form-inputs {
-  text-decoration: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
@@ -41,15 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #e1b300;
+  color: #f0ad42;
   font-family: 'kingthings_foundationregular';
-  font-size: 54px;
-  padding-left: 8;
+  font-size: 64px;
+  padding-left: 10;
+  /* text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff; */
 
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #f2ce61;
+  color: #f0ad42;
   float: right;
 
 }
