@@ -7,7 +7,7 @@ class PlacesController < ApplicationController
   end
 
   def new
-    @places = Place.new
+    @place = Place.new
   end
 
   def create
@@ -21,6 +21,13 @@ class PlacesController < ApplicationController
 
   def edit
     @place = Place.find(params[:id])
+  end
+
+  def update
+    @place = Place.find(params[:id])
+    @place.update_attributes(place_params)
+    redirect_to root_path
+    #redirect_to place_path
   end
 
   private
