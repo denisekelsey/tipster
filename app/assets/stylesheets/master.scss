@@ -7,6 +7,15 @@ a {
 
 }
 
+#arrow {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 16px;
+    height: 16px;
+    transform: rotate(135deg);
+    display: inline-block;
+}
+
 body {
   background: image_url('honeycomb1.jpg');
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,9 +35,38 @@ body {
   padding-left: 20px;
 }
 
+.center-page {
+    text-align: center;
+    color: #505152;
+    font-family: 'kingthings_foundationregular', sans-serif;
+    font-size: 55px;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    font-weight: 300;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    
+}
+
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
 }
 
 .navbar {
@@ -53,6 +91,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #f0ad42;
   float: right;
 
+}
+
+.no-access-div #no-access {
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    color: black;
+    font-weight: 300;
+    font-size: 80px;
+    transform: rotate(-35deg);
+
+}
+
+.not-found {
+  background: none;
+
+}
+
+#not-found {
+  font-size: 80px;
 }
 
 .page-item.active .page-link {
