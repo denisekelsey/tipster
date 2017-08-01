@@ -48,7 +48,7 @@ class PlacesController < ApplicationController
 
     @place.update_attributes(place_params)
     if @place.valid?
-       redirect_to Place.last
+       redirect_to place_path(@place)
     else
       render :edit, status: :unprocessable_entity
     end
