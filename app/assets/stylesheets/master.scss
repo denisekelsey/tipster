@@ -35,6 +35,16 @@ body {
   padding-left: 20px;
 }
 
+.btn-warning {
+    color: white;
+    background-color: #f0ad4e;
+    border-color: #fff;
+}
+
+.btn-danger {
+    border-color: #fff;
+} 
+
 .center-page {
     text-align: center;
     color: #505152;
@@ -45,6 +55,10 @@ body {
     top: 25%;
     width: 100%;
     font-weight: 300;
+}
+
+.clear {
+    clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
