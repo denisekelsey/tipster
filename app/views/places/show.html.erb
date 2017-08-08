@@ -49,7 +49,7 @@
 <div class="clear"></div>
 
 
-<!-- Modal -->
+<!-- Comments Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -99,3 +99,23 @@
   </div>
 <% end %>
 </div>
+<!--         -->
+<div class="clear"></div>
+
+<%= simple_form_for @photo, url: '#' do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :caption %>
+  <%= f.submit "Add a Photo", class: 'btn btn-danger' %>
+<% end %>
+
+<h1>Photos</h1>
+
+<% @place.photos.each do |photo| %>
+  <div>
+    <blockquote>
+      <b><%= photo.picture %></b> -
+        <%= photo.caption %>
+      <small><%= photo.user.email %></small>
+    </blockquote>
+  </div>
+<% end %>
