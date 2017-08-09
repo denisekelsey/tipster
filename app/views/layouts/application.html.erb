@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Meadster</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Meadster</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
+<body>
 
   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  <%= link_to 'Meadster', root_path, class: 'navbar-brand' %>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <%= link_to 'Meadster', root_path, class: 'navbar-brand' %>
 
-  <ul class="navbar-nav offset-7">
+    <ul class="navbar-nav offset-7">
       <% if user_signed_in? %>
-        <li class="nav-item">
-          < <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
-        </li>
+      <li class="nav-item">
+        < <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+      </li>
       <% else %>
-        <li class="nav-item">
-          <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-      <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
-    </li>
+      <li class="nav-item">
+        <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
+      </li>
       <% end %>
     </ul>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0 offset-1">
-      <li class="nav-item">
-      <%= link_to new_place_path, class: 'nav-link' do %>
-      <i class="fa fa-plus-circle"></i>
-      Add A Meadery!
-    <% end %>
-  </li>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0 offset-1">
+        <li class="nav-item">
+          <%= link_to new_place_path, class: 'nav-link' do %>
+          <i class="fa fa-plus-circle"></i>
+          Add A Meadery!
+          <% end %>
+        </li>
 
       </li>
     </ul>
@@ -47,13 +47,13 @@
 </nav>
 
 <% if notice.present? %>
-  <p class="alert alert-info"><%= notice %></p>
+<p class="alert alert-info"><%= notice %></p>
 <% end %>
 <% if alert.present? %>
-  <p class="alert alert-danger"><%= alert %></p>
+<p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
-    <%= yield %>
-    
-  </body>
+<%= yield %>
+
+</body>
 </html>

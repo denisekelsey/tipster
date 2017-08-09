@@ -8,12 +8,12 @@ a {
 }
 
 #arrow {
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    width: 16px;
-    height: 16px;
-    transform: rotate(135deg);
-    display: inline-block;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 16px;
+  height: 16px;
+  transform: rotate(135deg);
+  display: inline-block;
 }
 
 blockquote {
@@ -67,44 +67,49 @@ body {
 }
 
 .btn-warning {
-    color: white;
-    background-color: #f0ad4e;
-    border-color: #fff;
+  color: white;
+  background-color: #f0ad4e;
+  border-color: #fff;
 }
 
 .btn-danger {
-    border-color: #ccc;
+  border-color: #ccc;
 } 
 
 .center-page {
-    text-align: center;
-    color: #505152;
-    font-family: 'kingthings_foundationregular', sans-serif;
-    font-size: 55px;
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    font-weight: 300;
+  text-align: center;
+  color: #505152;
+  font-family: 'kingthings_foundationregular', sans-serif;
+  font-size: 55px;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  font-weight: 300;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   margin:0;
   padding:0;
 }
 
 h3 {
-    display: block;
-    font-size: 1.17em;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+
+}
+
+h5 {
+  margin-top: 11px;
+  margin-bottom: 10px;
 }
 
 .help-block {
@@ -115,13 +120,25 @@ h3 {
 }
 
 html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    #map {
-      height: 300px;
-    }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width:500px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+
+}
+
+#map {
+  height: 300px;
+}
 
 .navbar {
   box-shadow: 0px 1px 3px #2a2a2a;
@@ -133,11 +150,6 @@ html, body {
   font-family: 'kingthings_foundationregular';
   font-size: 64px;
   padding-left: 10;
-  /* text-shadow:
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff; */
 
 }
 
@@ -148,13 +160,13 @@ html, body {
 }
 
 .no-access-div #no-access {
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    color: black;
-    font-weight: 300;
-    font-size: 80px;
-    transform: rotate(-35deg);
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  color: black;
+  font-weight: 300;
+  font-size: 80px;
+  transform: rotate(-35deg);
 
 }
 
@@ -168,10 +180,10 @@ html, body {
 }
 
 .page-item.active .page-link {
-    z-index: 2;
-    color: #fff;
-    background-color: #c89f00;
-    border-color: #c89f00;
+  z-index: 2;
+  color: #fff;
+  background-color: #c89f00;
+  border-color: #c89f00;
 }
 
 .pagination a {
@@ -188,3 +200,17 @@ html, body {
   justify-content: center;
 
 }
+
+.text-box {
+  background-color: #f0ad42;
+  border-radius: 9px;
+  padding: 15px;
+  /* max-width: 400px; */
+  /* margin: 100px; */
+  /* margin: 120px; */
+  margin-left: 120px;
+  /* margin-top: -25px; */
+  text-align: center;
+  /* text-shadow: -1px -1px 0 lightgrey, 1px -1px 0 lightgrey, -1px 1px 0 lightgrey, 1px 1px 0 lightgrey; */
+}
+
