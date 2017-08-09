@@ -76,7 +76,7 @@
 
   <br />
 
-  <div class="text-box col-4 offset-1">
+  <div class="text-box col-4">
     <h2 class="float-left">Comments</h2>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary btn-md offset-1" data-toggle="modal" data-target="#CommentsModal">
@@ -88,7 +88,7 @@
 
   <div class="row">
     <% @place.comments.each do |comment| %>
-    <div class="col-12 col-sm-6">
+    <div class="columns col-12 col-sm-6">
       <blockquote>
         <% if comment.humanized_rating.present? %>
         <b><%= comment.humanized_rating %></b> -
@@ -131,7 +131,7 @@
 
   <br />
 
-  <div class="text-box col-3 offset-1">
+  <div class="text-box col-3">
     <h2 class="float-left">Photos</h2>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary btn-md offset-1" data-toggle="modal" data-target="#PhotoModal">
@@ -141,12 +141,13 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-    <div class="col-10 col-sm-5 offset-1">
+    <div class="col-12 col-sm-6">
       <blockquote>
         <%= image_tag photo.picture %>
        <h5> <%= photo.caption %> </h5>
-        
+        <div class="user-id">
         <small><%= photo.user.email %></small>
+        </div>
       </blockquote>
     </div>
     <% end %>

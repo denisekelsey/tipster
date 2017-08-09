@@ -92,6 +92,7 @@ body {
   clear: both;
 }
 
+
 h1, h2, h3, h4, h6 {
   margin:0;
   padding:0;
@@ -110,6 +111,7 @@ h3 {
 h5 {
   margin-top: 11px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .help-block {
@@ -201,6 +203,12 @@ img {
 
 }
 
+.user-id {
+  text-align: right;
+  padding-right: 15px;
+
+}
+
 .text-box {
   background-color: #f0ad42;
   border-radius: 9px;
@@ -208,9 +216,10 @@ img {
   /* max-width: 400px; */
   /* margin: 100px; */
   /* margin: 120px; */
-  margin-left: 120px;
+  margin-left: 30px;
   /* margin-top: -25px; */
   text-align: center;
   /* text-shadow: -1px -1px 0 lightgrey, 1px -1px 0 lightgrey, -1px 1px 0 lightgrey, 1px 1px 0 lightgrey; */
 }
+
 
