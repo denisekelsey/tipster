@@ -71,5 +71,5 @@ gem 'carrierwave', '~> 1.0'
 
 gem "fog-aws"
 
-gem 'airbrake'
+gem 'airbrake', group: :production
 
