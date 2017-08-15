@@ -76,6 +76,11 @@ body {
   border-color: #ccc;
 } 
 
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  height: 400px;
+  width: 100%;
+}
+
 .center-page {
   text-align: center;
   color: #505152;
