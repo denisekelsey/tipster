@@ -12,7 +12,6 @@ class Comment < ApplicationRecord
   }
 
   def humanized_rating
-    raise "test"
     RATINGS.invert[self.rating]
   end
 
