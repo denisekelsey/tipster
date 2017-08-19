@@ -74,20 +74,27 @@ body {
   border-color: #ccc;
 } 
 
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 10px;
-  left: 15%;
-  z-index: 10;
-  padding-bottom: 5px;
+  bottom: 30px;
+  left: 0;
   color: #fff;
   text-align: center;
+   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(1, 1, 1, 1) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .carousel-control-prev, .carousel-control-next {
   opacity: 1;
-  /*  background-color: #292b2c; */
   width: 5%;
 } 
 
@@ -98,11 +105,11 @@ body {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  height: 300px;
+  max-height: 300px;
   width: 100%; 
-  border-bottom-style: solid;
+  /*border-bottom-style: solid;
   border-bottom-color: black;
-  border-bottom-width: 5px;
+  border-bottom-width: 5px;*/
 }
 
 .center-page {
@@ -173,6 +180,7 @@ img {
 
 .navbar {
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin: 0;
 }
 
 .navbar-inverse .navbar-brand {
