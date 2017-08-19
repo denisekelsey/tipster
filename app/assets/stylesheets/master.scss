@@ -87,7 +87,7 @@ body {
 
 .carousel-control-prev, .carousel-control-next {
   opacity: 1;
-/*  background-color: #292b2c; */
+  /*  background-color: #292b2c; */
   width: 5%;
 } 
 
@@ -100,8 +100,9 @@ body {
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   height: 300px;
   width: 100%; 
- /* background-color: #292b2c;
-  padding-bottom: 30px; */
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 5px;
 }
 
 .center-page {
@@ -172,7 +173,6 @@ img {
 
 .navbar {
   box-shadow: 0px 1px 3px #2a2a2a;
-
 }
 
 .navbar-inverse .navbar-brand {
@@ -180,13 +180,11 @@ img {
   font-family: 'kingthings_foundationregular';
   font-size: 64px;
   padding-left: 10;
-
 }
 
 .navbar-inverse .navbar-nav .nav-link {
   color: #ffd480;
   float: right;
-
 }
 
 .no-access-div #no-access {
@@ -197,12 +195,10 @@ img {
   font-weight: 300;
   font-size: 80px;
   transform: rotate(-35deg);
-
 }
 
 .not-found {
   background: none;
-
 }
 
 #not-found {
@@ -236,13 +232,6 @@ img {
   padding-right: 15px;
 
 }
-
-/*.slider-rule {
-  border: solid black; 
-  border-width: 25px;
-  margin-top: 0;
-}
-*/
 
 .text-box {
   background-color: #ffd480;
