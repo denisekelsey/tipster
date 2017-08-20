@@ -76,10 +76,11 @@
 
   <br />
 
-  <div class="text-box col-4">
+  <div class="text-box col-12">
     <h2 class="float-left">Comments</h2>
+    <div class="clear"></div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary btn-md offset-1" data-toggle="modal" data-target="#CommentsModal">
+    <button type="button" class="btn btn-secondary btn-md float-right" data-toggle="modal" data-target="#myModal">
       Add A Comment
     </button>
   </div>
@@ -131,10 +132,12 @@
 
   <br />
 
-  <div class="text-box col-3">
+  <div class="text-box">
     <h2 class="float-left">Photos</h2>
+    <div class="clear"></div>
+
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary btn-md offset-1" data-toggle="modal" data-target="#PhotoModal">
+    <button type="button" class="btn btn-secondary btn-md float-right" data-toggle="modal" data-target="#PhotoModal">
       Add A Photo
     </button>
   </div>
@@ -144,9 +147,9 @@
     <div class="col-12 col-sm-6">
       <blockquote>
         <%= image_tag photo.picture %>
-       <h5> <%= photo.caption %> </h5>
+        <h5> <%= photo.caption %> </h5>
         <div class="user-id">
-        <small><%= photo.user.email %></small>
+          <small><%= photo.user.email %></small>
         </div>
       </blockquote>
     </div>

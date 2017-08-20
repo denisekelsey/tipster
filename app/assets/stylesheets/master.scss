@@ -46,8 +46,8 @@ blockquote p {
 } 
 
 body {
-  background: image_url('honeycomb21.jpg');
-  background-size: 40%;
+  background: image_url('honeycomb2.jpg');
+  background-size: 25%;
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -57,6 +57,7 @@ body {
   box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
   border: 1px solid #ccc;
+  border-radius: 10px;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -127,7 +128,6 @@ body {
 .clear {
   clear: both;
 }
-
 
 h1, h2, h3, h4, h6 {
   margin:0;
@@ -232,20 +232,13 @@ img {
 
 .pagination {
   justify-content: center;
-
-}
-
-.user-id {
-  text-align: right;
-  padding-right: 15px;
-
 }
 
 .text-box {
   background-color: #ffd480;
   border-radius: 9px;
   padding: 15px;
-  /* max-width: 400px; */
+  max-width: 95%;
   /* margin: 100px; */
   /* margin: 120px; */
   margin-left: 30px;
@@ -253,5 +246,36 @@ img {
   text-align: center;
   /* text-shadow: -1px -1px 0 lightgrey, 1px -1px 0 lightgrey, -1px 1px 0 lightgrey, 1px 1px 0 lightgrey; */
 }
+
+.user-booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 2px solid #000; 
+  border-radius: 10px;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#user-font{
+  font-weight: 600;
+  border-bottom: 3px solid black; 
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 20px;
+}
+
+.user-id {
+  text-align: right;
+  padding-right: 15px;
+}
+
+
 
 
