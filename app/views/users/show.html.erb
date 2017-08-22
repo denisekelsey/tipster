@@ -25,8 +25,8 @@
     <div class="col-12 col-sm-6">
       <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
       <blockquote>
-        <% if comment.humanized_rating.present? %>
-        <b><%= comment.humanized_rating %></b> -
+        <% if comment.rating_image.present? %>
+        <b><%= image_tag comment.rating_image %></b> -
         <% end %>
         <%= comment.message %>
         <small><%= comment.user.email %></small>
@@ -57,14 +57,14 @@
       <% if place.comments.present? %>
       <div class="col-12">
         <blockquote>
-          <% if place.comments.last.humanized_rating.present? %>
-          <b><%= place.comments.last.humanized_rating %></b> -
+          <% if place.comments.last.rating_image.present? %>
+          <b><%= image_tag place.comments.last.rating_image %></b> -
           <% end %>
           <%= place.comments.last.message %>
           <small><%= place.comments.last.user.email %></small>
         </blockquote>
       </div>
+      <%end%>
     </div>
     <% end %>
   </div>
-  <% end %>

@@ -2,16 +2,17 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :place
   after_create :send_comment_email
+ 
 
   RATINGS = {
-    'one star': '1_star',
-    'two stars': '2_stars',
-    'three stars': '3_stars',
-    'four stars': '4_stars',
-    'five stars': '5_stars'
+    "1star.jpg":  '1_star',
+    "2stars.png": '2_stars',
+    "3stars.png": '3_stars',
+    "4stars.jpg": '4_stars',
+    "5stars.png": '5_stars'
   }
 
-  def humanized_rating
+  def rating_image
     RATINGS.invert[self.rating]
   end
 

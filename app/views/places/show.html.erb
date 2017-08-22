@@ -91,8 +91,8 @@
     <% @place.comments.each do |comment| %>
     <div class="columns col-12 col-sm-6">
       <blockquote>
-        <% if comment.humanized_rating.present? %>
-        <b><%= comment.humanized_rating %></b> -
+        <% if comment.rating_image.present? %>
+        <b><%= image_tag comment.rating_image %></b> -
         <% end %>
         <%= comment.message %>
         <small><%= comment.user.email %></small>
