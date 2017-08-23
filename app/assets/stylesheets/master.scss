@@ -63,6 +63,7 @@ body {
   margin-bottom: 15px;
   padding-top: 10px;
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .btn-warning {
@@ -129,6 +130,11 @@ body {
   clear: both;
 }
 
+.columns {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 h1, h2, h3, h4, h6 {
   margin:0;
   padding:0;
@@ -141,7 +147,6 @@ h3 {
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-
 }
 
 h5 {
@@ -171,7 +176,11 @@ img {
   max-height:500px;
   width: auto;
   height: auto;
+}
 
+.image_tag {
+  width: 10px;
+  height: 10px;
 }
 
 #map {
@@ -232,6 +241,10 @@ img {
 
 .pagination {
   justify-content: center;
+}
+
+#photo_block {
+    content: no-open-quote;
 }
 
 .text-box {

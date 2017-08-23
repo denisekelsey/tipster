@@ -1,5 +1,5 @@
 
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box col-10 offset-1 clearfix">
 
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
@@ -76,26 +76,23 @@
 
   <br />
 
-  <div class="text-box col-12">
+  <div class="text-box col-11 clearfix">
     <h2 class="float-left">Comments</h2>
-    <div class="clear"></div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary btn-md float-right" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="btn btn-secondary btn-md float-right" data-toggle="modal" data-target="#CommentsModal">
       Add A Comment
     </button>
   </div>
-
-  <div class="clear"></div>
 
   <div class="row">
     <% @place.comments.each do |comment| %>
     <div class="columns col-12 col-sm-6">
       <blockquote>
         <% if comment.rating_image.present? %>
-        <b><%= image_tag comment.rating_image %></b> -
-        <% end %>
+       <%= image_tag comment.rating_image %>
         <%= comment.message %>
-        <small><%= comment.user.email %></small>
+        <% end %>
+        <small class="float-right"><i>Contributed by: <%= comment.user.username %></i></small>
       </blockquote>
     </div>
     <% end %>
@@ -132,10 +129,8 @@
 
   <br />
 
-  <div class="text-box">
+  <div class="text-box clearfix">
     <h2 class="float-left">Photos</h2>
-    <div class="clear"></div>
-
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary btn-md float-right" data-toggle="modal" data-target="#PhotoModal">
       Add A Photo
@@ -144,12 +139,12 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-    <div class="col-12 col-sm-6">
+    <div class="columns col-12 col-sm-6">
       <blockquote>
         <%= image_tag photo.picture %>
         <h5> <%= photo.caption %> </h5>
         <div class="user-id">
-          <small><%= photo.user.email %></small>
+          <small><i>Contributed by: <%= photo.user.username %></i></small>
         </div>
       </blockquote>
     </div>
