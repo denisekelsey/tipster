@@ -5,6 +5,11 @@ class CommentsController < ApplicationController
   def create
     @place = Place.find(params[:place_id])
     @place.comments.create(comment_params.merge(user: current_user))
+
+    @comment = Comment.create(comment_params)
+  if @comment.invalid?
+    flash[:error] = '<strong>Cannot save blank comment.</strong> &nbsp;&nbsp;Please try again.'
+  end
     redirect_to place_path(@place)
   end
 
@@ -15,3 +20,4 @@ class CommentsController < ApplicationController
   end
 
 end
+
