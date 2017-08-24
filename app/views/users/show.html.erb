@@ -10,12 +10,18 @@
     <h4><%= @user.comments.count %>  comments</h4>
     <h4><%= @user.comments.where(rating: '5_stars').count %>  5-star reviews</h4>
   </div>
+  <div class="row col-4 offset-3">
+    <a class="comments_anchor" href="#comments_added">Comments Added</a> 
+    <a class="comments_anchor" href="#places_added">Places Added</a> 
+  </div>
+  </div>
 </div>
 <div class="clear"></div>
 </div>
 
 <br />
 <br />
+<a name="comments_added"></a>
 <div class="user-booyah-box">
   <h1 class="text-center" id="user-font">Comments Added</h1>
   <br />
@@ -39,6 +45,7 @@
 <div class="clear"></div>
 <br />
 <br />
+<a name = "places_added"></a>
 <div class="user-booyah-box">
   <h1 class="text-center" id="user-font">Places Added</h1>
   <br />

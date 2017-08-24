@@ -15,6 +15,15 @@ class Comment < ApplicationRecord
     "5stars.png": '5_stars' 
   }
 
+  STARS = {
+    "0 Stars": '0_stars',
+    "1 Star":  '1_star',
+    "2 Stars": '2_stars',
+    "3 Stars": '3_stars',
+    "4 Stars": '4_stars',
+    "5 Stars": '5_stars' 
+  }
+
   def rating_image
     RATINGS.invert[self.rating]
   end
