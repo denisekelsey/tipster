@@ -84,7 +84,7 @@
     </button>
   </div>
 
-  <div class="row">
+  <div class="row clearfix">
     <% @place.comments.each do |comment| %>
     <div class="columns col-12 col-sm-6">
       <blockquote>
@@ -136,6 +136,8 @@
       Add A Photo
     </button>
   </div>
+
+  <div class="clear"></div>
 
   <div class="row">
     <% @place.photos.each do |photo| %>

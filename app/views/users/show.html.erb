@@ -14,7 +14,7 @@
     <a class="comments_anchor" href="#comments_added">Comments Added</a> 
     <a class="comments_anchor" href="#places_added">Places Added</a> 
   </div>
-  </div>
+</div>
 </div>
 <div class="clear"></div>
 </div>
@@ -32,10 +32,9 @@
       <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
       <blockquote>
         <% if comment.rating_image.present? %>
-          <%= image_tag comment.rating_image %>  
+        <%= image_tag comment.rating_image %>  
         <% end %>
         <%= comment.message %>
-        <small><%= comment.user.username %></small>
       </blockquote>
     </div>
     <% end %>
@@ -56,19 +55,14 @@
       <h1><%= link_to place.name, place_path(place) %></h1><br />
       <i><%= place.address %></i><br />
       <p><%= place.description %></p><br />
-
-      <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-      <% end %>
-
       <% if place.comments.present? %>
       <div class="col-12">
         <blockquote>
           <% if place.comments.last.rating_image.present? %>
-            <%= image_tag place.comments.last.rating_image %>  
+          <%= image_tag place.comments.last.rating_image %>  
           <% end %>
           <%= place.comments.last.message %>
-          <small><%= place.comments.last.user.email %></small>
+          <small><%= place.comments.last.user.username %></small>
         </blockquote>
       </div>
       <%end%>
