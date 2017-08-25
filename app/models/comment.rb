@@ -3,7 +3,7 @@ class Comment < ApplicationRecord
   belongs_to :place
   after_create :send_comment_email
 
-  validates :message, presence: true, length: { maximum: 200, minimum: 3 }
+  validates :message, presence: true, length: { maximum: 300, minimum: 3 }
  
 
   RATINGS = {

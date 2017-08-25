@@ -40,10 +40,10 @@
 <div class="booyah-box col-10 offset-1">
   <h1> <%= link_to place.name, place_path(place) %> </h1> 
   <i> <%= place.address %> </i> <br />
-  <p> <%= place.description %> </p> <br />
+  <p> <%= place.description %> </p> 
 
   <% if place.user.present? %>
-  <small><%= place.user.username %></small>
+  <small>Added by: <%= place.user.username %></small>
   <% end %>
 
 
@@ -65,6 +65,7 @@
     <div class="col-12 col-sm-6">
       <blockquote>
         <%= image_tag place.photos.first.picture %>
+        <h5> <%= place.photos.first.caption %> </h5>
       </blockquote>
     </div>
     <% end %>

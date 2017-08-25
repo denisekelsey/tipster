@@ -92,7 +92,9 @@
        <%= image_tag comment.rating_image %>
         <%= comment.message %>
         <% end %>
+        <div>
         <small class="float-right"><i>Contributed by: <%= comment.user.username %></i></small>
+        </div>
       </blockquote>
     </div>
     <% end %>
