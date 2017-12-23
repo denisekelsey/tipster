@@ -6,6 +6,12 @@ a {
   color: black;
 }
 
+.add-place {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5px;
+}
+
 #arrow {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -47,7 +53,7 @@ blockquote p {
 
 body {
   background: image_url('honeycomb2.jpg');
-  background-size: 25%;
+  background-size: 100%;
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,8 +223,11 @@ img {
 
 .navbar-inverse .navbar-nav .nav-link {
   color: #ffd480;
+  font-size: 22px;
   float: right;
-  padding-right: 40px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .no-access-div #no-access {
@@ -260,17 +269,21 @@ img {
   justify-content: center;
 }
 
+.sign-in {
+  margin-right: 20px;
+}
+
 .text-box {
   background-color: #ffd480;
   border-radius: 9px;
   padding: 15px;
   max-width: 95%;
-  /* margin: 100px; */
-  /* margin: 120px; */
   margin-left: 30px;
-  /* margin-top: -25px; */
   text-align: center;
-  /* text-shadow: -1px -1px 0 lightgrey, 1px -1px 0 lightgrey, -1px 1px 0 lightgrey, 1px 1px 0 lightgrey; */
+}
+
+.title {
+  text-shadow: 3px 3px #666666;
 }
 
 .user-booyah-box {
