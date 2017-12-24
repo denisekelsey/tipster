@@ -12,6 +12,10 @@ a {
   padding-left: 5px;
 }
 
+.alert {
+  margin: 0;
+}
+
 #arrow {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -157,6 +161,10 @@ h1, h2, h3, h4, h6 {
   padding:0;
 }
 
+h1 {
+  padding: 10px 0;
+}
+
 h3 {
   display: block;
   font-size: 1.17em;
@@ -217,8 +225,9 @@ img {
 .navbar-inverse .navbar-brand {
   color: #ffd480;
   font-family: 'kingthings_foundationregular';
-  font-size: 64px;
-  padding-left: 10px;
+  font-size: 73px;
+  padding: 0px 10px;
+  line-height: 1.1;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -226,7 +235,7 @@ img {
   font-size: 22px;
   float: right;
   padding-right: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
