@@ -76,15 +76,15 @@ body {
   padding-bottom: 10px;
 }
 
-.btn-warning {
+.btn-danger {
+  border-color: #ccc;
+} 
+
+.btn-default, .btn-warning {
   color: white;
   background-color: #f0ad4e;
   border-color: #fff;
 }
-
-.btn-danger {
-  border-color: #ccc;
-} 
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
